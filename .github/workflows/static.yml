@@ -1,0 +1,21 @@
+- name: Setup Bin
+  # You may pin to the exact commit or the version.
+  # uses: zcong1993/setup-bin@360fe38a87880346ab684888696a173aa8669400
+  uses: zcong1993/setup-bin@v0.5.1
+  with:
+    # Name present the binary, eg: hugo
+    name: sean-chat
+    # Binary file relative path with asset folder, default .
+    bin-path: # optional
+    # Use for test if binary install success, eg: hugo version
+    test-cmd: # optional
+    # Binary version as cache key, required if download-url set
+    bin-version: # optional
+    # Direct binary download url
+    download-url: # optional
+    # Download github release, owner/repo, eg: gohugoio/hugo, required if download-url is not set
+    repo-full: # optional
+    # Github release tag name or latest, required if download-url is not set
+    tag-version: # optional
+    # Regex use for detect which asset should download, eg: "Linux-64bit.tar.gz$", required if download-url is not set
+    matcher: # optional
